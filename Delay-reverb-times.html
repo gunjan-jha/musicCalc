@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" id="form">
+      <label for="bpm">Input your bpm</label>
+      <input type="number" name="bpm" id="bpm" />
+
+      <label for="time signature">Time signature</label>
+      <select name="time-signature" id="time-signature">
+        <option value="0">2/2</option>
+      </select>
+      <label for="Preset">Preset</label>
+      <select name="hall">
+        <option value="0">Hall</option>
+      </select>
+      <label for="Pre-delay">Pre-delay</label>
+      <select name="pre-delay" id="preDelay">
+        <option value="0">1/32nd</option>
+      </select>
+      <label for="Total delay/reverb duration"
+        >Total Delay/reverb duration</label
+      >
+      <select name="total delay" id="totalLength">
+        <option value="0">Double whole</option>
+      </select>
+      <button type="button" onClick="createBpmChart()">submit</button>
+      <script src="Delay-reverb-times.js"></script>
+
+      <div id="output"></div>
+      <div id="preDelay-output"></div>
+    </form>
+  </body>
+</html>
+
+<style>
+  form {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+  }
+</style>

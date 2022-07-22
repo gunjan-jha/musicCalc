@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src ="chordProgression.js"></script>
+</head>
+<body>
+    <form id = "formData">
+        <div id  = "box">
+            <label for="prog_input_list_select">I want to</label>
+            <select name="choose_prog_input" id="choose_prog_input">
+                <option value=0>choose a progression from a list</option>
+                <option value=1>input a progression myself</option>
+            </select>
+
+            <label for="progression">Progression</label>
+            <select name="prog_select_input" id="prog_select_input">
+                <option value= 0>8-bar blues</option>
+                <option value= 1>12-bar blues</option>
+                <option value= 2>50's progression</option>
+                <option value= 3>50's progression #2</option>
+                <option value= 4>Andalusian cadence</option>
+                <option value= 5>Circle progression</option>
+                <option value= 6>Montgomery-Ward bridge</option>
+                <option value= 7>The Pachelbel progression</option>
+                <option value= 8>I – I – IV – V</option>
+                <option value= 9>I – ii – V</option>
+                <option value= 10>I – ♭iii – IV – ♭iii</option>
+                <option value= 11>I – iii – IV – V</option>
+                <option value= 12>I – iii – vi – IV</option>
+                <option value= 13>I – IV – I – V</option>
+                <option value= 14>I – IV – ii – V</option>
+                <option value= 15>I – IV – V</option>
+                <option value= 16>I – IV – V – IV</option>
+                <option value= 17>I – IV – V – V</option>
+                <option value= 18>I – IV – vii° – iii – vi – ii – V – I</option>
+                <option value= 19>I – IV – ♭vii° – IV</option>
+                <option value= 20>I – IV – ♭vii – IV</option>
+                <option value= 21>I – V – IV – V</option>
+                <option value= 22>I – V – vi – IV</option>
+                <option value= 23>I – vi – V</option>
+                <option value= 24>I – ♭VII – IV</option>
+                <option value= 25>ii – V – I</option>
+                <option value= 26>IV – V – vi – iii</option>
+                <option value= 27>V – I – IV</option>
+                <option value= 28>V – IV – I</option>
+                <option value= 29>vi – IV – I – V</option>
+                <option value= 30>vi – V – IV – iii</option>
+                <option value= 31>vi – V – IV – V</option>
+                <option value= 32>vi⁶ – ii – v⁶ – I</option>
+                <option value= 33>i – iv – i (min)</option>
+                <option value= 34>i – iv – v (min)</option>
+                <option value =35>i – iv – v – i (min)</option>
+                <option value =36>i – iv⁷ – v⁷ – i (min)</option>
+                <option value =37>i – iv – VII (min)</option>
+                <option value =38>i – VI – III – VII (min)</option>
+                <option value =39>i –vi⁷ – iv⁷ – v⁷ (min)</option>
+                <option value =40>i – VI – VII (min)</option>
+                <option value =41>i – VII – VI – VII (min)</option>
+                <option value =42>ii° – v – i (min)</option>                
+                <option value =43>VI – VII – i – i (min)</option>
+            </select>
+
+            <label for="key">Key</label>
+            <select name="key" id="key">
+                <option value = 0>C </option>
+                <option value = 1>C♯</option>
+                <option value = 2>D♭</option>
+                <option value = 3>D</option>
+                <option value = 4>D#</option>
+                <option value = 5>E♭</option>
+                <option value = 6>E</option>
+                <option value = 7>F</option>
+                <option value = 8>F♯</option>
+                <option value = 9>G♭</option>
+                <option value = 10>G</option>                
+                <option value = 11>G♯</option>                
+                <option value = 12>A♭</option>                             
+                <option value = 13>A</option>
+                <option value = 14>A♯</option>
+                <option value =15>B♭</option>                              
+                <option value= 16>B</option>
+            </select>
+
+            <button type = "button" onclick="calculateProgression()">Generate</button>
+            <div id = "result"></div>
+        </div>
+
+    </form>
+</body>
+</html>
+
+<style>
+    #box {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    label {
+        margin: 10px;
+    }
+
+    button {
+        margin:10px;
+    }
+
+</style>

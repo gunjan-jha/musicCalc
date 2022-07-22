@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>key-signature calculator</title>
+  </head>
+  <body>
+    <form id="formData">
+      <div class="row">
+        <label for="method">I want to find </label>
+        <select name="signature_select" id="signature_select"></select>
+      </div>
+      <div id="signatureBox">
+        <div class="row">
+          <label for="method">Key quality</label>
+          <select name="keyQuality" id="keyQuality"></select>
+        </div>
+        <div class="row">
+          <label for="method">Root note</label>
+          <select name="rootNote" id="rootNote"></select>
+        </div>
+      </div>
+      <div id="keyBox">
+        <div class="row">
+          <label for="method">sharp or flats?</label>
+          <select name="sharps" id="sharps"></select>
+        </div>
+        <div class="row">
+          <label for="method">How many ?</label>
+          <input type="number" name="howMany" id="howMany" />
+        </div>
+      </div>
+
+      <div class="row">
+        <button type="button" id="calcButton">calculate</button>
+      </div>
+
+      <div id="output"></div>
+    </form>
+
+    <script src="key-signature.js"></script>
+  </body>
+</html>
+
+<style>
+  .row {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+  }
+</style>

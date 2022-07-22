@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harmonic series calculator</title>
+  </head>
+  <body>
+    <div class="row">
+      <label for="Note">Note</label>
+      <select name="Note" id="Note"></select>
+    </div>
+    <div class="row">
+      <label for="octave">Octave</label>
+      <select name="ocatve" id="octave"></select>
+    </div>
+    <div class="row">
+      <label for="Number of partials">Number of partials</label>
+      <input type="number" id="number" required />
+    </div>
+
+    <div class="row">
+      <button type="button" id="calcButton">calculate</button>
+    </div>
+    <div id="output"></div>
+
+    <script src="HarmonicSeries.js"></script>
+  </body>
+</html>
+<style>
+  .row {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+</style>

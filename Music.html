@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "music-calculator">
+<form action id="formData">
+    <label for="root-note">root note
+    </label>
+    <select name="root-note-selector" id="root-note">
+        <option value="C">C</option>
+        <option value="C#">C#</option>
+        <option value="Db">Db</option>
+        <option value="D">D</option>
+        <option value="D#">D#</option>
+        <option value="Eb">Eb</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="F#">F#</option>
+        <option value="Gb">Gb</option>
+        <option value="G">G</option>
+        <option value="G#">G#</option>
+        <option value="Ab">Ab</option>
+        <option value="A">A</option>
+        <option value="A#">A#</option>
+        <option value="Bb">Bb</option>
+        <option value="B">B</option>
+    </select>
+    <label for="chord-type">chord-type</label>
+    <select name="chord-type-selector" id="chord-type">
+        <option value="major">Major triad(e.g.,C)</option>
+        <option value="minor">Minor triad(e.g.,Cm,C-) </option>
+        <option value="augmented">Augmented triad(e.g.,C+)</option>
+        <option value="diminished">Diminished triad(e.g.,C)</option>
+        <option value="suspended2nd">Suspended 2nd(e.g.,Csus2)</option>
+        <option value="suspended4th">Suspended 4th(e.g.,Csus,Csus4)</option>
+        <option value="dominant7th">Dominant 7th(e.g.,C7)</option>
+        <option value="major7th">Major 7th(e.g.,Cmaj7)</option>
+        <option value="minor7th">Minor 7th(e.g.,Cm7,C-7)</option>
+        <option value="diminished7th">Diminished 7th(e.g.,C7)</option>
+        <option value="halfDiminished">Half-Diminished 7th</option>
+        <option value="major6th">Major-6th(e.g.,c6 )</option>
+        <option value="minor6th">Minor-6th(e.g.,cm6 )</option>
+    </select>
+
+    <button type="button" id ="calcButton" onclick=calculateNotes()>Submit</button>
+
+    <div id ="result">
+    </div>
+</form>
+</div>
+    <script src="/chordCal.js"></script>
+
+    
+</body>
+</html>
+
+<style>
+#formData {
+    display: flex;
+    flex-direction: column;
+
+}
+#music-calculator {
+    width:400px;
+    background-color: rgba(240, 248, 255, 0.623);
+}
+
+label{
+    margin :5px;
+}
+select{
+    margin:10px;
+    padding:5px;
+}
+
+
+</style>
+

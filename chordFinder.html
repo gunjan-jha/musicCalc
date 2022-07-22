@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src ="chordFinder.js"></script>
+
+    <form id ="formData">
+    <label for="Note1">Note#1</label>
+    <select name="note1" id="note1">
+        <option value = -1>None</option>
+        <option value = 0>C</option>
+        <option value = 1>C#/D♭</option>
+        <option value = 2>D</option>
+        <option value = 3>D#/E♭</option>
+        <option value = 4 >E</option>
+        <option value = 5>F</option>
+        <option value = 6>F#/G♭</option> 
+        <option value = 7>G</option> 
+        <option value = 8>G#/A♭</option>
+        <option value = 9>A</option>
+        <option value = 10>A#/B♭</option>
+        <option value = 11>B</option>
+    </select>
+    <label for="Note2">Note#2</label>
+    <select name="note2" id="note2">
+        <option value = -1>None</option>
+        <option value = 0>C</option>
+        <option value = 1>C#/D♭</option>
+        <option value = 2>D</option>
+        <option value = 3>D#/E♭</option>
+        <option value = 4 >E</option>
+        <option value = 5>F</option>
+        <option value = 6>F#/G♭</option> 
+        <option value = 7>G</option> 
+        <option value = 8>G#/A♭</option>
+        <option value = 9>A</option>
+        <option value = 10>A#/B♭</option>
+        <option value = 11>B</option>
+    </select>
+
+    <label for="Note3">Note#3</label>
+    <select name="note3" id="note3">
+        <option value = -1>None</option>
+        <option value = 0>C</option>
+        <option value = 1>C#/D♭</option>
+        <option value = 2>D</option>
+        <option value = 3>D#/E♭</option>
+        <option value = 4 >E</option>
+        <option value = 5>F</option>
+        <option value = 6>F#/G♭</option> 
+        <option value = 7>G</option> 
+        <option value = 8>G#/A♭</option>
+        <option value = 9>A</option>
+        <option value = 10>A#/B♭</option>
+        <option value = 11>B</option>
+    </select>
+
+    <label for="Note4">Note#4</label>
+    <select name="note4" id="note4">
+        <option value = -1>None</option>
+        <option value = 0>C</option>
+        <option value = 1>C#/D♭</option>
+        <option value = 2>D</option>
+        <option value = 3>D#/E♭</option>
+        <option value = 4 >E</option>
+        <option value = 5>F</option>
+        <option value = 6>F#/G♭</option> 
+        <option value = 7>G</option> 
+        <option value = 8>G#/A♭</option>
+        <option value = 9>A</option>
+        <option value = 10>A#/B♭</option>
+        <option value = 11>B</option>
+    </select>
+
+    <label for="Note5">Note#5</label>
+    <select name="note5" id="note5">
+        <option value = -1>None</option>
+        <option value = 0>C</option>
+        <option value = 1>C#/D♭</option>
+        <option value = 2>D</option>
+        <option value = 3>D#/E♭</option>
+        <option value = 4 >E</option>
+        <option value = 5>F</option>
+        <option value = 6>F#/G♭</option> 
+        <option value = 7>G</option> 
+        <option value = 8>G#/A♭</option>
+        <option value = 9>A</option>
+        <option value = 10>A#/B♭</option>
+        <option value = 11>B</option>
+    </select>
+
+    <label for="root note">Root note</label>
+    <select name="root_note" id="root_note">
+        <option value = -1>None</option>
+        <option value = 0>C</option>
+        <option value = 1>C#/D♭</option>
+        <option value = 2>D</option>
+        <option value = 3>D#/E♭</option>
+        <option value = 4 >E</option>
+        <option value = 5>F</option>
+        <option value = 6>F#/G♭</option> 
+        <option value = 7>G</option> 
+        <option value = 8>G#/A♭</option>
+        <option value = 9>A</option>
+        <option value = 10>A#/B♭</option>
+        <option value = 11>B</option>
+    </select>
+    <button type="button" onclick = chordFinder()>Submit</button>
+    <div id ="result"></div>
+</form>
+</body>
+</html>
+
+<style>
+    #formData {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>

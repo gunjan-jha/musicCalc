@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div class="row">
+        <label for="scale-length">scale-length</label>
+        <input type="Number" id = "scale-length"/>
+        <select name="scale-length-unit" id="scale-length-unit">
+          <option value="0">mm</option>
+          <option value="1">cm</option>
+          <option value="2">m</option>
+          <option value="3">in</option>
+          <option value="3">feet</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="pitch">Pitch</label>
+        <select name="pitch_unit" id="pitch_unit">
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="frequency">Frequency</label>
+        <input type="number" name="frequency" id="frequency">
+      </div>
+
+      <div class="row">
+        <label for="type">String type<label>
+      <select name="stringType" id="selectBox">
+      </select>
+    </div>
+
+      <div class="row">
+        <label for="Unit weight">unit weight</label>
+        <input type="Number" id="unit-weight">
+      </div>
+      <div class="row">
+        <label for="string gauge">String gauge</label>
+        <select name="gauge" id="gauge">
+        </select>
+      </div>
+      <button type="button" onclick=calStringTension()>submit</button>
+      <div id ="result"></div>
+    </form>
+    <script src ="GuitarStringTension.js"></script>
+  </body>
+
+  <style>
+    .row{
+      display: flex;
+      flex-direction: column;
+      width:400px;
+      margin: 10px;
+    }
+  </style>
+</html>
